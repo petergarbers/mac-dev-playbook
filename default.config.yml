@@ -1,79 +1,75 @@
 ---
 downloads: ~/.ansible-downloads/
+general:
+    local_home: "{{ lookup('env','HOME') }}"
+    user_name: "{{ lookup('env', 'USER') }}"
 
-configure_dotfiles: yes
-configure_sudoers: yes
-configure_terminal: yes
+configure_dotfiles: no
+configure_sudoers: no
+configure_terminal: no
 configure_osx: yes
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo_accept_hostkey: no
+dotfiles_repo_local_destination: ~/Dropbox/dotfiles
 dotfiles_files:
-  - .bash_profile
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
+  #- .gitignore
+  #- .inputrc
+  # - .osx
+  #- .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - chromedriver
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
+  - ag
+  - antigen
+  - autojump
+  - awscli
+  - cocoapods
+  - coreutils
+  - emacs-plus
+  - leiningen
+  - kops
+  - terraform
   - wget
-  - wrk
+  - zsh
+  - zsh-completions
 
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/php
+  - d12frosted/emacs-plus
+
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password
+  - alfred
+  - authy
+  - atom
   - docker
   - dropbox
-  # - fing # Download link keeps getting changed, d'oh!
-  - firefox
+  - expressvpn
+  - flycut
   - google-chrome
-  - handbrake
-  - licecap
-  - limechat
-  - macvim
+  - iterm2
+  - java
+  - postico
   - sequel-pro
-  - skitch
   - slack
-  - sublime-text
-  - transmit
-  - vagrant
-  - virtualbox
+  - shiftit
+  - spotify
+  - telegram
+  - tunnelblick
+  #- vagrant
+  #- virtualbox
+  - zoomus
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
 
-osx_script: "~/.osx --no-restart"
+osx_script: "sh ~/conf/.osx --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
