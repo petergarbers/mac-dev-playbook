@@ -6,17 +6,7 @@ general:
 
 configure_dotfiles: no
 configure_sudoers: no
-configure_terminal: no
 configure_osx: yes
-
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: no
-dotfiles_repo_local_destination: ~/Dropbox/dotfiles
-dotfiles_files:
-  #- .gitignore
-  #- .inputrc
-  # - .osx
-  #- .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
