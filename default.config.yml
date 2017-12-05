@@ -38,7 +38,6 @@ homebrew_cask_apps:
   - atom
   - docker
   - dropbox
-  - expressvpn
   - flycut
   - google-chrome
   - iterm2
@@ -46,7 +45,7 @@ homebrew_cask_apps:
   - postico
   - sequel-pro
   - slack
-  - shiftit
+  - slate
   - spotify
   - telegram
   - tunnelblick

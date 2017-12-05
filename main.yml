@@ -26,15 +26,15 @@
     - include: tasks/sudoers.yml
       when: configure_sudoers
 
-    - include: tasks/osx.yml
-      when: configure_osx
-      tags: ['osx']
-
     - include: tasks/extra-packages.yml
       tags: ['extra-packages']
 
     - include: tasks/oh-my-zsh-setup.yml
     - include: tasks/spacemacs-setup.yml
+
+    - include: tasks/osx.yml
+      when: configure_osx
+      tags: ['osx']
 
     - name: Run configured post-provision ansible task files.
       include: "{{ outer_item }}"
