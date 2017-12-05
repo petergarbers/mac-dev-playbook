@@ -29,7 +29,6 @@ homebrew_taps:
   - caskroom/cask
   - d12frosted/emacs-plus
 
-
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
@@ -45,7 +44,7 @@ homebrew_cask_apps:
   - postico
   - sequel-pro
   - slack
-  - slate
+  - shiftit
   - spotify
   - telegram
   - tunnelblick
