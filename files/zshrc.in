@@ -8,7 +8,7 @@ export TERM="xterm-256color"
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+ZSH_THEME="robbyrussell"
 
 # Example aliases
 # alias zshconfig="atom ~/.zshrc"
@@ -35,7 +35,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git cp command-not-found git-extras history screen ssh-agent docker docker-compose zsh-completions)
+plugins=(autojump git cp command-not-found git-extras history screen ssh-agent docker docker-compose zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,3 +43,6 @@ source $ZSH/oh-my-zsh.sh
 
 #set JAVA_HOME (see https://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/)
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

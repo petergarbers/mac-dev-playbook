@@ -9,6 +9,11 @@
   become: yes
   become_user: "{{general.user_name}}"
 
+- name: remove conf zshrc
+  file:
+    path: "{{general.local_home}}/conf/zshrc"
+    state: absent
+
 - name: deploy .zshrc
   become: yes
   become_user: "{{general.user_name}}"
