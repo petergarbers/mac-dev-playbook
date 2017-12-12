@@ -42,6 +42,7 @@ homebrew_cask_apps:
   - dropbox
   - flycut
   - google-chrome
+  - insomnia
   - iterm2
   - java
   - postico
