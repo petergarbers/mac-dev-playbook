@@ -38,6 +38,7 @@ homebrew_cask_apps:
   - alfred
   - authy
   - atom
+  - discord
   - docker
   - dropbox
   - flycut
