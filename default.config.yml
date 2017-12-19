@@ -22,6 +22,7 @@ homebrew_installed_packages:
   - leiningen
   - kops
   - terraform
+  - telnet
   - wget
   - zsh
   - zsh-completions
@@ -45,7 +46,7 @@ homebrew_cask_apps:
   - google-chrome
   - insomnia
   - iterm2
-  - java
+  - java8
   - postico
   - sequel-pro
   - slack
