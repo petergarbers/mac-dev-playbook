@@ -18,6 +18,7 @@ homebrew_installed_packages:
   - cocoapods
   - coreutils
   - emacs-plus
+  - go
   - jq
   - leiningen
   - kops
