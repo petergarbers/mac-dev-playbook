@@ -15,6 +15,7 @@ homebrew_installed_packages:
   - autojump
   - awscli
   - awless
+  - carthage
   - cocoapods
   - coreutils
   - emacs-plus
@@ -43,6 +44,7 @@ homebrew_cask_apps:
   - discord
   - docker
   - dropbox
+  - firefoxdeveloperedition
   - flycut
   - google-chrome
   - insomnia
@@ -57,6 +59,7 @@ homebrew_cask_apps:
   - tunnelblick
   #- vagrant
   #- virtualbox
+  - whatsapp
   - zoomus
 
 # See `geerlingguy.mas` role documentation for usage instructions.
