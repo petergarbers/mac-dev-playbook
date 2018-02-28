@@ -44,21 +44,23 @@ homebrew_cask_apps:
   - discord
   - docker
   - dropbox
-  - firefoxdeveloperedition
+  - firefox-developer-edition
   - flycut
   - google-chrome
   - insomnia
   - iterm2
   - java8
   - postico
+  - rbenv
   - sequel-pro
+  - skype
   - slack
   - shiftit
   - spotify
   - telegram
   - tunnelblick
-  #- vagrant
-  #- virtualbox
+  - vagrant
+  - virtualbox
   - whatsapp
   - zoomus
 
