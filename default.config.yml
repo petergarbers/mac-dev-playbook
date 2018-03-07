@@ -41,6 +41,7 @@ homebrew_cask_apps:
   - alfred
   - authy
   - atom
+  - boot
   - discord
   - docker
   - dropbox
@@ -59,8 +60,8 @@ homebrew_cask_apps:
   - spotify
   - telegram
   - tunnelblick
-  - vagrant
-  - virtualbox
+  #- vagrant
+  #- virtualbox
   - whatsapp
   - zoomus
 

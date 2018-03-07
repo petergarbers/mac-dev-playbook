@@ -30,7 +30,9 @@
       tags: ['extra-packages']
 
     - include: tasks/oh-my-zsh-setup.yml
+      tags: ['dotfiles']
     - include: tasks/spacemacs-setup.yml
+      tags: ['dotfiles']
 
     - include: tasks/osx.yml
       when: configure_osx
