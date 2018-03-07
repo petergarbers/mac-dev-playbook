@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - jq
   - leiningen
   - kops
+  - rbenv
   - terraform
   - telnet
   - wget
@@ -32,6 +33,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
+  - caskroom/versions
   - d12frosted/emacs-plus
   - wallix/awless
 
@@ -41,7 +43,7 @@ homebrew_cask_apps:
   - alfred
   - authy
   - atom
-  - boot
+  # - boot
   - discord
   - docker
   - dropbox
@@ -50,9 +52,8 @@ homebrew_cask_apps:
   - google-chrome
   - insomnia
   - iterm2
-  - java8
+  - java
   - postico
-  - rbenv
   - sequel-pro
   - skype
   - slack
