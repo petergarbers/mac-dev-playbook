@@ -19,10 +19,12 @@ homebrew_installed_packages:
   - cocoapods
   - coreutils
   - emacs-plus
+  - git-flow
   - go
   - jq
   - leiningen
   - kops
+  - openconnect
   - rbenv
   - terraform
   - telnet
@@ -52,7 +54,7 @@ homebrew_cask_apps:
   - google-chrome
   - insomnia
   - iterm2
-  - java
+  - java8
   - postico
   - sequel-pro
   - skype
