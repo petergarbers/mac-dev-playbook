@@ -50,3 +50,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # Golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# rbenv
+eval "$(rbenv init -)"

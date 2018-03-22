@@ -25,7 +25,9 @@ homebrew_installed_packages:
   - leiningen
   - kops
   - openconnect
+  - rabbitmq
   - rbenv
+  - sassc
   - terraform
   - telnet
   - wget
@@ -56,6 +58,7 @@ homebrew_cask_apps:
   - iterm2
   - java8
   - postico
+  - recordit
   - sequel-pro
   - skype
   - slack
@@ -63,6 +66,7 @@ homebrew_cask_apps:
   - spotify
   - telegram
   - tunnelblick
+  - typora
   #- vagrant
   #- virtualbox
   - whatsapp
