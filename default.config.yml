@@ -51,6 +51,7 @@ homebrew_cask_apps:
   - discord
   - docker
   - dropbox
+  - flux
   - firefox-developer-edition
   - flycut
   - google-chrome
