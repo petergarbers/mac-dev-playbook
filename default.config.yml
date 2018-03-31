@@ -12,13 +12,13 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - ag
   - antigen
-  - autojump
   - awscli
   - awless
   - carthage
   - cocoapods
   - coreutils
   - emacs-plus
+  - fasd
   - git-flow
   - go
   - jq
