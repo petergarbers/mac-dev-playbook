@@ -6,23 +6,23 @@
   become: yes
   become_user: "{{general.user_name}}"
 
-- name: remove conf zshrc
+- name: remove conf profiles.clj
   file:
     path: "{{general.local_home}}/conf/zshrc"
     state: absent
 
-- name: deploy .zshrc
+- name: deploy .~/.lein/profiles
   become: yes
   become_user: "{{general.user_name}}"
   template:
-    src: files/zshrc.in
-    dest: "{{general.local_home}}/conf/zshrc"
+    src: files/profiles.in
+    dest: "{{general.local_home}}/conf/profiles"
     force: no
     owner: "{{general.user_name}}"
 
 - name: remove standard zshrc
   file:
-    path: "{{general.local_home}}/.zshrc"
+    path: "{{general.local_home}}/.lein/profiles.clj"
     state: absent
 
 - name: Create conf folder in home directory
@@ -33,8 +33,8 @@
 
 - name: symlink zshrc
   file:
-    path: "{{general.local_home}}/.zshrc"
-    src: "{{general.local_home}}/conf/zshrc"
+    path: "{{general.local_home}}/.lein/profiles.clj"
+    src: "{{general.local_home}}/conf/profiles"
     state: link
     force: no
     owner: "{{general.user_name}}"
