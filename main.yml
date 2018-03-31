@@ -30,11 +30,11 @@
       tags: ['extra-packages']
 
     - include: tasks/oh-my-zsh-setup.yml
-      tags: ['dotfiles']
+      tags: ['dotfiles','zsh']
     - include: tasks/spacemacs-setup.yml
-      tags: ['dotfiles']
+      tags: ['dotfiles','spacemacs']
     - include: tasks/setup-lein-profiles.yml
-      tags: ['lein']
+      tags: ['dotfiles','lein']
 
     - include: tasks/osx.yml
       when: configure_osx
