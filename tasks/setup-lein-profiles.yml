@@ -8,7 +8,7 @@
 
 - name: remove conf profiles.clj
   file:
-    path: "{{general.local_home}}/conf/zshrc"
+    path: "{{general.local_home}}/conf/profiles"
     state: absent
 
 - name: deploy .~/.lein/profiles
