@@ -28,6 +28,7 @@ homebrew_installed_packages:
   - rabbitmq
   - rbenv
   - sassc
+  - shellcheck
   - terraform
   - telnet
   - wget
@@ -58,8 +59,8 @@ homebrew_cask_apps:
   - insomnia
   - iterm2
   - java8
+  - licecap
   - postico
-  - recordit
   - sequel-pro
   - skype
   - slack
