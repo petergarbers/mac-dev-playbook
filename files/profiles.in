@@ -16,9 +16,7 @@
                        :timeout 120000}
         ;; injections used with lucid.core.inject to make certain code available in every ns
         :injections [(require '[lucid.core.inject :as inject])
-                     (require 'repload)
                      (inject/in
                       clojure.core
                       [clojure.pprint pprint pp]
-                      [clojure.repl source doc]
-                      [repload repload])]}}
+                      [clojure.repl source doc])]}}

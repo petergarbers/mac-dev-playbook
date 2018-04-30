@@ -376,6 +376,8 @@ you should place your code here."
   (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
   (add-hook 'clojure-mode-hook 'smartparens-strict-mode)
   (add-hook 'clojure-mode-hook 'sp-use-paredit-bindings)
+  (add-hook 'cider-repl-mode-hook #'paredit-mode)
+  
   (require 'cider)
   (setq cider-cljs-lein-repl
         "(do (require 'figwheel-sidecar.repl-api)
