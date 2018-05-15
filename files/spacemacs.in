@@ -377,10 +377,5 @@ you should place your code here."
   (add-hook 'clojure-mode-hook 'smartparens-strict-mode)
   (add-hook 'clojure-mode-hook 'sp-use-paredit-bindings)
   (add-hook 'cider-repl-mode-hook #'paredit-mode)
-  
-  (require 'cider)
-  (setq cider-cljs-lein-repl
-        "(do (require 'figwheel-sidecar.repl-api)
-			           (figwheel-sidecar.repl-api/start-figwheel!)
-			           (figwheel-sidecar.repl-api/cljs-repl))")
+
   )
