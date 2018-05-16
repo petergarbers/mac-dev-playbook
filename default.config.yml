@@ -14,6 +14,7 @@ homebrew_installed_packages:
   - antigen
   - awscli
   - awless
+  - candid82/brew/joker
   - carthage
   - cocoapods
   - coreutils
