@@ -24,9 +24,7 @@ homebrew_installed_packages:
   - go
   - jq
   - leiningen
-  - kops
   - openconnect
-  - rabbitmq
   - rbenv
   - sassc
   - shellcheck
@@ -70,10 +68,7 @@ homebrew_cask_apps:
   - telegram
   - tunnelblick
   - typora
-  #- vagrant
-  #- virtualbox
   - whatsapp
-  - zoomus
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
