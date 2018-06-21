@@ -37,6 +37,7 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     ansible
      nginx
      python
      ruby
@@ -452,6 +453,7 @@ middle"
   (add-to-list 'flycheck-global-modes 'clojure-mode)
   (add-to-list 'flycheck-global-modes 'clojurescript-mode)
 
-
+  ;; ansible
+  (setq ansible::vault-password-file "~/.ansible")
 
   )
