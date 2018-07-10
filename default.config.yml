@@ -47,28 +47,26 @@ homebrew_cask_apps:
   - alfred
   - authy
   - atom
-  # - boot
   - discord
   - docker
   - dropbox
   - flux
   - firefox-developer-edition
-  - flycut
   - google-chrome
   - insomnia
   - iterm2
   - java8
+  - jumpcut
+  - keybase
   - licecap
   - postico
   - sequel-pro
-  - skype
   - slack
   - shiftit
   - spotify
   - telegram
   - tunnelblick
   - typora
-  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
