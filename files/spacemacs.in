@@ -340,7 +340,11 @@ values."
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
    dotspacemacs-whitespace-cleanup 'changed
-   ))
+   )
+   ;; Becuase fuck cider
+   (add-to-list 'configuration-layer-elpa-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
+   (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
+   )
 
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
