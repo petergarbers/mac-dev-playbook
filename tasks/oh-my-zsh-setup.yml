@@ -1,40 +1,16 @@
 ---
-- name: Ensure conf directory exists.
-  file:
-    path: "{{general.local_home}}/conf"
-    state: directory
-  become: yes
-  become_user: "{{general.user_name}}"
-
-- name: remove conf zshrc
-  file:
-    path: "{{general.local_home}}/conf/zshrc"
-    state: absent
-
-- name: deploy .zshrc
-  become: yes
-  become_user: "{{general.user_name}}"
-  template:
-    src: files/zshrc.in
-    dest: "{{general.local_home}}/conf/zshrc"
-    force: no
-    owner: "{{general.user_name}}"
+- name: Clone oh-my-zsh repo
+  git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest="{{general.local_home}}/.oh-my-zsh"
 
 - name: remove standard zshrc
   file:
     path: "{{general.local_home}}/.zshrc"
     state: absent
 
-- name: Create conf folder in home directory
-  file:
-    path: "{{general.local_home}}/conf/"
-    state: directory
-    owner: "{{general.user_name}}"
-
-- name: symlink zshrc
+- name: symlink spacemacs
   file:
     path: "{{general.local_home}}/.zshrc"
-    src: "{{general.local_home}}/conf/zshrc"
+    src: "/keybase/private/kvlt/dotfiles/zshrc"
     state: link
     force: no
     owner: "{{general.user_name}}"

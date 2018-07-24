@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - git-flow
   - go
   - jq
+  - jrnl
   - leiningen
   - openconnect
   - rbenv
@@ -57,7 +58,7 @@ homebrew_cask_apps:
   - iterm2
   - java8
   - jumpcut
-  - keybase
+  #- keybase
   - licecap
   - postico
   - sequel-pro
